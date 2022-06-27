@@ -28,7 +28,7 @@ class WishListCheckerCronModel
                 $result[] = $item->getSku();
             }
         }
-        $this->_logger->info(var_dump($result));
+        // $this->_logger->info(var_dump($result));
         return $result;
     }
 }

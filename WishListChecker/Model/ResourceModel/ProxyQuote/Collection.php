@@ -1,3 +1,5 @@
+<?php
+
 class Collection extends AbstractCollection                                                                                                                                                         
 {
     protected $_idFieldName = 'entity_id';
@@ -5,8 +7,8 @@ class Collection extends AbstractCollection
     protected function _construct()
     {
         $this->_init(
-            'My\Module\Model\ProxyQuote',
-            'My\Module\Model\ResourceModel\ProxyQuote'
+            'Astound\WishListChecker\Model\ProxyQuote',
+            'Astound\WishListChecker\Model\ResourceModel\ProxyQuote'
         );
     }
 }
