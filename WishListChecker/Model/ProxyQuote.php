@@ -1,21 +1,25 @@
 <?php
 
+namespace Astound\WishListChecker\Model;
+
+use Magento\Framework\Model\AbstractModel;
+
 class ProxyQuote extends AbstractModel                                                                                                                                                              
 {
     /**
      * cache tag
      */
-    const CACHE_TAG = 'proxy_quote';
+    const CACHE_TAG = 'wishlist_ordered_product_table';
 
     /**
      * @var string
      */
-    protected $_cacheTag = 'proxy_quote';
+    protected $_cacheTag = 'wishlist_ordered_product_table';
 
     /**
      * @var string
      */
-    protected $_eventPrefix = 'proxy_quote';
+    protected $_eventPrefix = 'wishlist_ordered_product_table';
 
     protected function _construct()
     {
@@ -41,7 +45,7 @@ class ProxyQuote extends AbstractModel
     }
 
     /**
-     * @param int $adminUserId
+     * @param int $customerId
      * @return Quote
      */
     public function setCustomerId($customerId)
@@ -58,7 +62,7 @@ class ProxyQuote extends AbstractModel
     }
 
     /**
-     * @param int $adminUserId
+     * @param int $productId
      * @return Quote
      */
     public function setProductId($productId)

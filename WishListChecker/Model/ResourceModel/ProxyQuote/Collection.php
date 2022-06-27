@@ -1,8 +1,12 @@
 <?php
 
+namespace Astound\WishListChecker\Model\ResourceModel\ProxyQuote;
+
+use \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
+
 class Collection extends AbstractCollection                                                                                                                                                         
 {
-    protected $_idFieldName = 'entity_id';
+    protected $_idFieldName = 'id';
 
     protected function _construct()
     {
