@@ -63,6 +63,6 @@ class ProxyQuote extends AbstractModel
      */
     public function setProductId($productId)
     {
-        return $this->setData('products_id', $customerId);
+        return $this->setData('products_id', $productId);
     }
 }
