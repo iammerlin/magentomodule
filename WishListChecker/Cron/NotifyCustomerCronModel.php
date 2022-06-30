@@ -33,10 +33,10 @@ class NotifyCustomerCronModel
         $connection = $this->_resourceConnection->getConnection();
         $wishlist_ordered_product_table = $connection->getTableName('wishlist_ordered_product_table');
 
-        $query1 = "SELECT `customer_id` FROM `" . $wishlist_ordered_product_table;
+        $query1 = "SELECT `customer_id` FROM `" . $wishlist_ordered_product_table . "`";
         $customerIds = $connection->fetchAll($query1);
 
-        $query2 = "SELECT `product_id` FROM `" . $wishlist_ordered_product_table;
+        $query2 = "SELECT `product_id` FROM `" . $wishlist_ordered_product_table . "`";
         $productIds = $connection->fetchAll($query2);
 
         for ($i = 0; $i <= count($customerIds); $i++) {
