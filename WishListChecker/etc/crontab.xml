@@ -4,6 +4,9 @@
         <job name="wishlist_ordered_product_generate" instance="Astound\WishListChecker\Cron\WishListCheckerCronModel" method="execute">
             <schedule>0 0 0 0 0</schedule>
         </job>
+        <job name="notify_customers" instance="Astound\WishListChecker\Cron\NotifyCustomerCronModel" method="execute">
+            <schedule>0 0 0 0 0</schedule>
+        </job>
      </group>
 </config>
 
