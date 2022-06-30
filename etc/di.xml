@@ -1,0 +1,15 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="astound_wishlist_products_listing" xsi:type="string">Astound\WishListChecker\Model\ResourceModel\ProxyQuote\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Astound\WishListChecker\Model\ResourceModel\ProxyQuote\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">wishlist_ordered_product_table</argument>
+            <argument name="resourceModel" xsi:type="string">Astound\WishListChecker\Model\ResourceModel\ProxyQuote</argument>
+        </arguments>
+    </virtualType>
+</config>
