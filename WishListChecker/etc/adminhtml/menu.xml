@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Astound_WishListChecker::grid" title="Grids" module="Astound_WishListChecker" sortOrder="51" resource="Astound_WishListChecker::grid"/>
+        <add id="Astound_WishListChecker::post" title="Grid" module="Astound_WishListChecker" sortOrder="10" action="astound_grid/post" resource="Astound_WishListChecker::post" parent="Astound_WishListChecker::grid"/>
+
+    </menu>
+</config>
